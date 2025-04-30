@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "6788092745",
+    "project_id": "bookmydoc-794ae",
+    "storage_bucket": "bookmydoc-794ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6788092745:android:83a767e354a04088340098",
+        "android_client_info": {
+          "package_name": "com.example.doctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGjugAaXvjd645y_xkmXyzQEtGyC_AF8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

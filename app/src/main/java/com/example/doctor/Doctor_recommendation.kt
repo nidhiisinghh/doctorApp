@@ -1,44 +1,20 @@
 package com.example.doctor
 
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.doctor.DoctorAdapter
-import com.example.doctor.SpecialtyAdapter
-import com.example.doctor.Doctor
-import com.example.doctor.Specialty
 
-class MainActivity : AppCompatActivity() {
-
-    private lateinit var specialtyAdapter: SpecialtyAdapter
+class Doctor_recommendation : AppCompatActivity() {
     private lateinit var doctorAdapter: DoctorAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_doctor_recommendation)
 
-        setupSpecialtiesRecyclerView()
         setupDoctorsRecyclerView()
-    }
-
-    private fun setupSpecialtiesRecyclerView() {
-        val rvSpecialties = findViewById<RecyclerView>(R.id.rvSpecialties)
-
-        // Horizontal layout for specialties
-        val layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        rvSpecialties.layoutManager = layoutManager
-
-        // Sample specialty data
-        val specialties = listOf(
-            Specialty("General", R.drawable.salad),
-            Specialty("Ophthalmology", R.drawable.eye),
-            Specialty("Dentist", R.drawable.tooth),
-            Specialty("Nutrition", R.drawable.salad)
-        )
-
-        specialtyAdapter = SpecialtyAdapter(specialties)
-        rvSpecialties.adapter = specialtyAdapter
     }
 
     private fun setupDoctorsRecyclerView() {

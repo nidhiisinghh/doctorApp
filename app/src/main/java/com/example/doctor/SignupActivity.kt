@@ -18,6 +18,10 @@ class SignupActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.apply {
+            signupBtn.setOnClickListener {
+                val intent = Intent(this@SignupActivity, LoginActivity::class.java)
+                startActivity(intent)
+            }
             loginRedirect.setOnClickListener {
                 val intent = Intent(this@SignupActivity, LoginActivity::class.java)
                 startActivity(intent)

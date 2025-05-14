@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".introActivity">
+    tools:context=".IntroActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -26,7 +26,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:text="Welcome to BookMyDoc!"
-        android:textColor="@color/white"
+        android:textColor="#FEF3E2"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
